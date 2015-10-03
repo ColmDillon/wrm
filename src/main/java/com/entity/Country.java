@@ -7,23 +7,23 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="nations")
-public class Nationality {
+public class Country {
 	
 	@Id
 	@Column(name="id")
 	private int id;
 	
-	@Column(name="nations")
-	private String nation;
+	@Column(name="country")
+	private String country;
 	
-	public Nationality(){
+	public Country(){
 		
 	}
 	
-	public Nationality(int id, String nation) {
+	public Country(int id, String country) {
 		super();
 		this.id = id;
-		this.nation = nation;
+		this.country = country;
 	}
 
 	public int getId() {
@@ -35,11 +35,11 @@ public class Nationality {
 	}
 
 	public String getNation() {
-		return nation;
+		return country;
 	}
 
-	public void setNation(String nation) {
-		this.nation = nation;
+	public void setNation(String country) {
+		this.country = country;
 	}
 	
 	

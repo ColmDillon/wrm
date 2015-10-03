@@ -23,7 +23,7 @@ public class League implements Serializable {
 	private List<Team> teams;
 	
 	@Column(name="country")
-	private Nationality country;
+	private Country country;
 	
 	
 	public League(){
@@ -31,7 +31,7 @@ public class League implements Serializable {
 	}
 	
 	
-	public League(int id, String name, List<Team> teams, Nationality country) {
+	public League(int id, String name, List<Team> teams, Country country) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -64,12 +64,12 @@ public class League implements Serializable {
 	}
 
 
-	public Nationality getCountry() {
+	public Country getCountry() {
 		return country;
 	}
 
 
-	public void setCountry(Nationality country) {
+	public void setCountry(Country country) {
 		this.country = country;
 	}
 	

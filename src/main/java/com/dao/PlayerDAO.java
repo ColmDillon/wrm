@@ -2,17 +2,17 @@ package com.dao;
 
 import java.util.Collection;
 
-import com.entity.Nationality;
+import com.entity.Country;
 import com.entity.Player;
 import com.entity.Team;
 
 public interface PlayerDAO {
-	void addPlayer();
-	void deletePlayer();
+	void addPlayer(Player player);
+	void deletePlayer(Player player);
 	Collection<Player> getAllPlayers();
 	Collection<Player> getPlayersByName(String firstname, String surname);
 	Collection<Player> getPlayersByPosition(String position);
 	Collection<Player> getPlayersByTeam(Team team);
-	Collection<Player> getPlayersByNationality(Nationality nationality);
-	Collection<Player> getPlayerById(int id);
+	Collection<Player> getPlayersBycountry(Country country);
+	Collection<Player> getPlayer(Player player);
 }

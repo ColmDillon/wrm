@@ -27,8 +27,8 @@ public class Player implements Serializable {
 	@Column(name="team")
 	private Team team;
 	
-	@Column(name="nationality")
-	private Nationality nationality;
+	@Column(name="country")
+	private Country country;
 	
 	private PlayerStats stats;
 	
@@ -37,14 +37,14 @@ public class Player implements Serializable {
 	}
 
 	public Player(int id, String firstname, String surname, String position,
-			Team team, Nationality nationality, PlayerStats stats) {
+			Team team, Country country, PlayerStats stats) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
 		this.surname = surname;
 		this.position = position;
 		this.team = team;
-		this.nationality = nationality;
+		this.country = country;
 		this.stats = stats;
 	}
 
@@ -88,12 +88,12 @@ public class Player implements Serializable {
 		this.team = team;
 	}
 
-	public Nationality getNationality() {
-		return nationality;
+	public Country getcountry() {
+		return country;
 	}
 
-	public void setNationality(Nationality nationality) {
-		this.nationality = nationality;
+	public void setcountry(Country country) {
+		this.country = country;
 	}
 	
 	public PlayerStats getStats(){

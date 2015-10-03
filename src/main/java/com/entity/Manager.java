@@ -19,8 +19,8 @@ public class Manager {
 	@Column(name="surname")
 	private String surname;
 	
-	@Column(name="nationality")
-	private Nationality nationality;
+	@Column(name="country")
+	private Country country;
 	
 	
 	public Manager(){
@@ -28,12 +28,12 @@ public class Manager {
 	}
 	
 	public Manager(int id, String firstname, String surname,
-			Nationality nationality) {
+			Country country) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
 		this.surname = surname;
-		this.nationality = nationality;
+		this.country = country;
 	}
 
 	public int getId() {
@@ -60,12 +60,12 @@ public class Manager {
 		this.surname = surname;
 	}
 
-	public Nationality getNationality() {
-		return nationality;
+	public Country getcountry() {
+		return country;
 	}
 
-	public void setNationality(Nationality nationality) {
-		this.nationality = nationality;
+	public void setcountry(Country country) {
+		this.country = country;
 	}
 	
 }
